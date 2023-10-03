@@ -22,7 +22,7 @@ jobs:
       - name: validate
         run: terraform validate  
       - name: plan 
-        run: terraforn plan 
+        run: terraform plan 
       - name: apply 
         run: terraform apply -auto-approve  
      
