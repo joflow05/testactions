@@ -14,12 +14,13 @@ jobs:
           run: |
             node -v
             npm -v
-          
-        - name: multi string 
+        - name: python command 
           run: |
-            import platform
-            print(platform.processor())
-            shell: python     
+             import platform
+             print("Before platform.processor()")
+             print(platform.processor())
+             print("After platform.processor()")
+          shell: python     
    run-windows-command:
       runs-on: windows-latest 
       steps: 
